@@ -1,0 +1,219 @@
+/* Genel stiller */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-feature-settings: normal;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-list li a:hover {
+    color: #fa0050;
+}
+
+/* Arama bölümü stilleri */
+.search-feature {
+    background: url(/wwwroot/img/slider.jpg) center/cover no-repeat;
+    padding: 10vw;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 10px;
+    width: calc(70% - 20px); 
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    background-color: #fa0050;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+/* Tanıtım bölümü stilleri */
+.promo-feature {
+    background: url('/wwwroot/img/slider.jpg') center/cover no-repeat;
+    margin-top: 10vw;
+    color: #fff;
+    padding: 10vw 0;
+}
+
+.promo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.promo-content {
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    right: 10vw;
+    top: 10vw;
+    padding: 5vw;
+    border-radius: 8px;
+    color: #333;
+    text-align: left;
+    width: 80%;
+
+}
+
+.promo-button {
+    background-color: #fa0050;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1.5vw;
+}
+
+.promo-button:hover {
+    background-color: #d30043;
+}
+
+/* Diğer özellikler bölümü stilleri */
+.other-feature {
+    background: #f8f9fa;
+    padding: 10vw 2vw;
+}
+
+.other-container {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.other-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 3vw;
+}
+
+.other-card {
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.other-card:hover {
+    transform: scale(1.05);
+}
+
+.other-card-image {
+    position: relative;
+}
+
+.other-card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1vw;
+}
+
+.other-overlay-text {
+    position: absolute;
+    bottom: 1.5vw;
+    left: 1vw;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 2px;
+    color: #333;
+}
+
+/* İndirme bölümü stilleri */
+.download-feature {
+    background: #fa0050;
+    max-width: 80%;
+    border-radius: 15px;
+    padding: 5vw 2vw;
+    position: relative;
+    color: #fff;
+    margin: auto;
+}
+
+.download-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2vw;
+}
+
+.download-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.download-phone-image {
+    width: 70%;
+    max-width: 300px;
+    margin-bottom: -6vw;
+    transform: rotate(5deg);
+}
+
+/* Ekran boyutlarına göre düzenlemeler */
+@media screen and (max-width: 768px) {
+    .other-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .download-feature {
+        max-width: 90%;
+    }
+
+    .download-phone-image {
+        width: 50%;
+        max-width: 200px;
+        margin-bottom: -4vw;
+    }
+}
